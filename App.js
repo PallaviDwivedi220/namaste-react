@@ -22,13 +22,15 @@ Desired DOM structure
     </div>
 </div> */
 
-const parent = React.createElement('div', {id: 'parent'},
-    [React.createElement('div', {id: 'child1'}, 
-        [React.createElement('h1', {}, 'I am the h1 in child1')], 
-        [React.createElement('h2', {}, 'I am h2 in child1')])], 
-    [React.createElement('div', {id: 'child2'}, 
-        [React.createElement('h1', {id: 'h1'}, 'I am the h1 in child2')], 
-        [React.createElement('h2', {id: 'h2'}, 'I am the h2 in child2')])]);
+const parent = React.createElement('div', {id: 'parent'},[
+    React.createElement('div', {id: 'child1'}, [
+        React.createElement('h1', {}, 'I am the h1 in child1'),
+        React.createElement('h2', {}, 'I am h2 in child1')
+    ])], 
+    React.createElement('div', {id: 'child2'}, [
+        React.createElement('h1', {id: 'h1'}, 'I am the h1 in child2'),
+        React.createElement('h2', {id: 'h2'}, 'I am the h2 in child2')
+    ]));
 
 root.render(parent);
 
