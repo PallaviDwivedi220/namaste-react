@@ -1,16 +1,14 @@
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-    'h1', 
-    {className: 'heading', id: 'xyz'}, 
-    'Hello World from React!');
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const heading = React.createElement('h1', {className: 'heading', id: 'xyz'}, 'Hello World from React!');
 
 console.log(heading);
 
 //root.render(heading);
 
-/* 
-Desired DOM structure
+/* Desired DOM structure
 <div id="parent2">
     <div id="child1">
         <h1></h1>
